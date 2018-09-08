@@ -1,0 +1,13 @@
+2018-09-08T19:56:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_dequeue_style(), 0 passed in C:\xampp\htdocs\testdomain\wp-content\themes\twentyseventeen-child\functions.php on line 42 and exactly 1 expected in C:\xampp\htdocs\testdomain\wp-includes\functions.wp-styles.php:185
+Stack trace:
+#0 C:\xampp\htdocs\testdomain\wp-content\themes\twentyseventeen-child\functions.php(42): wp_dequeue_style()
+#1 C:\xampp\htdocs\testdomain\wp-includes\class-wp-hook.php(298): check_widget_contacts('')
+#2 C:\xampp\htdocs\testdomain\wp-includes\class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\testdomain\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\testdomain\wp-settings.php(449): do_action('init')
+#5 C:\xampp\htdocs\testdomain\wp-config.php(46): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\testdomain\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\testdomain\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+  
+

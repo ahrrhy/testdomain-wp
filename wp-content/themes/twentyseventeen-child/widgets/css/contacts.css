@@ -1,0 +1,90 @@
+.widget.contacts-widget ul li {
+  border: none;
+}
+
+.widget.contacts-widget ul li a, button#contact-us-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 800;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  color: #fff;
+  background-color: #222;
+  border: 0;
+  border-radius: 2px;
+  padding: 1em 2em;
+  transition: background 0.2s;
+}
+
+.widget.contacts-widget ul li a:hover, button#contact-us-button:hover {
+  background: #767676;
+  box-shadow: none;
+}
+
+.widget.contacts-widget ul li span.widget-field-value {
+  display: none;
+}
+
+.widget.contacts-widget ul li label {
+  display: inline;
+  font-size: 0.875rem;
+  font-weight: 800;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  color: #fff;
+}
+
+@media screen and (min-width: 48em) {
+  .site-footer .widget-area .widget-column.footer-widget-1 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer .site-info {
+    display: inline-block;
+  }
+
+  .site-footer .wrap .widget-area {
+    float: right;
+    padding-top: 0;
+  }
+
+  .site-footer .wrap .widget-area:after {
+    clear: both;
+  }
+
+  .widget.contacts-widget ul li span.widget-field-value {
+    display: inline;
+  }
+
+  .widget.contacts-widget ul li a, .widget.contacts-widget ul li label {
+    display: inline;
+    color: #666;
+    background-color: #fff;
+    font-weight: normal;
+    padding: 0.25em 0;
+  }
+
+  .widget.contacts-widget ul li a:hover,
+  .widget.contacts-widget ul li a:active,
+  .widget.contacts-widget ul li a:focus,
+  .widget.contacts-widget ul li a:visited,
+  .widget.contacts-widget ul li a:focus-within {
+    background: none;
+    cursor: auto;
+    color: #666;
+    box-shadow: none;
+    outline: none;
+  }
+
+  button#contact-us-button {
+    padding: .75em;
+    display: inline;
+    width: auto;
+  }
+
+}

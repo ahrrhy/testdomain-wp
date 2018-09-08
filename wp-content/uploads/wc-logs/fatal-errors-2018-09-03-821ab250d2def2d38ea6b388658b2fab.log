@@ -1,0 +1,13 @@
+2018-09-03T18:20:41+00:00 CRITICAL Uncaught Error: Class '/widgets/Contacts' not found in C:\xampp\htdocs\testdomain\wp-includes\class-wp-widget-factory.php:106
+Stack trace:
+#0 C:\xampp\htdocs\testdomain\wp-includes\widgets.php(113): WP_Widget_Factory->register('/widgets/Contac...')
+#1 C:\xampp\htdocs\testdomain\wp-content\themes\twentyseventeen-child\functions.php(15): register_widget('/widgets/Contac...')
+#2 C:\xampp\htdocs\testdomain\wp-includes\class-wp-hook.php(298): {closure}('')
+#3 C:\xampp\htdocs\testdomain\wp-includes\class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\testdomain\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\testdomain\wp-includes\widgets.php(1474): do_action('widgets_init')
+#6 C:\xampp\htdocs\testdomain\wp-includes\class-wp-hook.php(298): wp_widgets_init('')
+#7 C:\xampp\htdocs\testdomain\wp-includes\class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\testdomain\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\te
+

@@ -1,0 +1,45 @@
+.contacts-widget-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background: rgba(0,0,0,0.7);
+}
+
+.contacts-widget-modal .message-wrap {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  padding: 1em;
+  text-align: center;
+  background: #fff;
+}
+
+.contacts-widget-modal .message-wrap .message {
+  margin-top: 1em;
+  color: #0f0f0f;
+  font-weight: 800;
+}
+
+.contacts-widget-modal .message-wrap .close:before {
+  content: 'x';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 800;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: #fff;
+  background: #ff0000;
+  padding: .3em .7em;
+}
+
+.contacts-widget-modal .message-wrap .close:hover {
+  cursor: pointer;
+}

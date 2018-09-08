@@ -1,0 +1,54 @@
+/** Woocommerce Product Short Description */
+.main .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+  float: right;
+}
+
+/** Woocommerce Product Gallery*/
+.main .woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+  float: left;
+}
+
+.single-product form.cart .quantity {
+  float: left;
+}
+
+.single_add_to_cart_button.button.alt {
+  width: 60%;
+}
+
+/** Woocommers Search */
+.woocommerce-product-search {
+  position: relative;
+}
+
+.woocommerce-product-search button[type='submit']{
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: .5em 1em;
+}
+
+@media screen and (min-width: 48em) {
+  .has-sidebar:not(.error404) #primary {
+    float: right;
+  }
+
+  .has-sidebar #secondary {
+    float: left;
+  }
+
+  .has-header-image.twentyseventeen-front-page .site-branding,
+  .has-header-video.twentyseventeen-front-page .site-branding,
+  .has-header-image.home.blog .site-branding,
+  .has-header-video.home.blog .site-branding {
+    right: 0;
+  }
+
+  .custom-logo-link {
+    padding-left: 2em;
+  }
+
+  .navigation-top nav {
+    margin-right: -1.25em;
+  }
+}

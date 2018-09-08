@@ -1,0 +1,13 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Description:  Twenty Seventeen Child Theme
+ Author:       Stanislav Zhuravel
+ Template:     twentyseventeen
+ Version:      1.0.0
+ Text Domain:  twenty-seventeen-child
+*/
+
+/** Helpers */
+.display-block {
+  display: block;
+}
