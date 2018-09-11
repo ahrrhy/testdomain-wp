@@ -6,10 +6,10 @@
 define('DB_NAME', 'testdomain');
 
 /** MySQL database username */
-define('DB_USER', 'wp');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'wp');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
