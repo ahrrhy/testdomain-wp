@@ -34,10 +34,33 @@
                 ) );
                 ?>
             </nav><!-- .social-navigation -->
-        <?php endif;
-
-        get_template_part( 'template-parts/footer/site', 'info' );
-        ?>
+        <?php endif; ?>
+        <div class="customer-contact-info">
+            <ul>
+                <li class="contact-number">
+                    <a id="contact-number" href="tel:9876543210">
+                        <label for="contact-number">Call Us</label>
+                        <span class="widget-field-value">: 9876543210</span>
+                    </a>
+                </li>
+                <li class="contact-email">
+                    <a id="contact-email" href="mailto:testdomain@mail.to">
+                        <label for="contact-email">Email</label>
+                        <span class="widget-field-value">: testdomain@mail.to</span>
+                    </a>
+                </li>
+                <li class="contact-us-button">
+                    <button id="contact-us-button">Contact Us</button>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts-widget-modal">
+            <div class="message-wrap">
+                <span class="close"></span>
+                <p class="message">You may use contact form here</p>
+            </div>
+        </div>
+        <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
     </div><!-- .wrap -->
 </footer><!-- #colophon -->
 </div><!-- .site-content-contain -->

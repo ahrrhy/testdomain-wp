@@ -15,37 +15,26 @@ function child_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 
-/**
- *  Widget Settings
- */
-// Enable widget config file
-require('widgets/widgets.php');
-
-// Enable widgets css
-function check_widget_contacts() {
-    // check if contacts widget is used
-    if( is_active_widget( '', '', 'contacts' ) ) {
-        // add styles for widget
-        wp_enqueue_style('contacts-css', get_stylesheet_directory_uri().'/widgets/css/contacts.css');
-        wp_enqueue_style(
-            'contacts-modal-css',
-            get_stylesheet_directory_uri().'/widgets/css/contacts-modal.css'
-        );
-        wp_enqueue_script(
-            'contacts-js',
-            get_stylesheet_directory_uri().'/widgets/js/contacts.js',
-            ['jquery'],
-            '',
-            true
-        );
-    } else {
-        wp_dequeue_style('contacts-css');
-        wp_dequeue_style('contacts-modal-css');
-        wp_dequeue_script('contacts-js');
-    }
+function add_footer_contacts() {
+    wp_register_style(
+        'footer-contacts',
+        get_stylesheet_directory_uri() . '/assets/css/footer-contacts.css'
+    );
+    wp_register_script(
+        'footer-contacts-script',
+        get_stylesheet_directory_uri() . '/assets/js/footer-contacts.js'
+    );
+    wp_enqueue_style('footer-contacts');
+    wp_enqueue_script(
+        'footer-contacts-script',
+        get_stylesheet_directory_uri().'/widgets/js/contacts.js',
+        ['jquery'],
+        '',
+        true
+    );
 }
 
-add_action( 'init', 'check_widget_contacts' );
+add_action('wp_enqueue_scripts', 'add_footer_contacts');
 
 /**
  * Woocommerce Settings
@@ -60,7 +49,7 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ra
  * Adding Custom Post Types
  */
 add_action('init', 'register_books_post_types');
-function register_books_post_types(){
+function register_books_post_types() {
     register_post_type('books', [
             'labels' => [
                 'name'          => esc_html__('Book', 'twentyseventeen'),
@@ -102,8 +91,8 @@ function register_books_post_types(){
     );
 }
 add_action('init', 'create_taxonomy_genre');
-function create_taxonomy_genre()
-{
+
+function create_taxonomy_genre() {
 // Labels
     $labels = array(
         'name'              => esc_html__( 'Genre', 'twentyseventeen' ),
@@ -135,3 +124,5 @@ function create_taxonomy_genre()
     );
     register_taxonomy('genre', ['books'], $args);
 }
+
+require('inc/child-theme-customizer.php');

@@ -1,0 +1,134 @@
+.customer-contact-info ul li {
+  border: none;
+  list-style: none;
+  margin: 15px 0;
+}
+
+.customer-contact-info ul li a,
+button#contact-us-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 800;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  color: #fff;
+  background-color: #222;
+  border: 0;
+  border-radius: 2px;
+  padding: 1em 2em;
+  transition: background 0.2s;
+}
+
+.customer-contact-info ul li a:hover,
+button#contact-us-button:hover {
+  background: #767676;
+  box-shadow: none;
+}
+
+.customer-contact-info ul li span.widget-field-value {
+  display: none;
+}
+
+.customer-contact-info ul li label {
+  display: inline;
+  font-size: 0.875rem;
+  font-weight: 800;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  color: #fff;
+}
+
+.contacts-widget-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background: rgba(0,0,0,0.7);
+}
+
+.contacts-widget-modal .message-wrap {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  padding: 1em;
+  text-align: center;
+  background: #fff;
+}
+
+.contacts-widget-modal .message-wrap .message {
+  margin-top: 1em;
+  color: #0f0f0f;
+  font-weight: 800;
+}
+
+.contacts-widget-modal .message-wrap .close:before {
+  content: 'x';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 800;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: #fff;
+  background: #ff0000;
+  padding: .3em .7em;
+}
+
+.contacts-widget-modal .message-wrap .close:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+  .customer-contact-info {
+    float: right;
+    padding-top: 0;
+  }
+
+  .site-footer .wrap .widget-area:after {
+    clear: both;
+  }
+
+  .customer-contact-info ul li span.widget-field-value {
+    display: inline;
+  }
+
+  .customer-contact-info ul li a,
+  .customer-contact-info ul li label {
+    display: inline;
+    color: #666;
+    background-color: #fff;
+    font-weight: normal;
+    padding: 0.25em 0;
+  }
+
+  .customer-contact-info ul li a:hover,
+  .customer-contact-info ul li a:active,
+  .customer-contact-info ul li a:focus,
+  .customer-contact-info ul li a:visited,
+  .customer-contact-info ul li a:focus-within {
+    background: none;
+    cursor: auto;
+    color: #666;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .customer-contact-info ul li a#contact-email:hover {
+    cursor: pointer;
+  }
+
+  button#contact-us-button {
+    padding: .75em;
+    display: inline;
+    width: auto;
+  }
+}
