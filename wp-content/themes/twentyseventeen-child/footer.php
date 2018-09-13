@@ -38,27 +38,42 @@
         <div class="customer-contact-info">
             <ul>
                 <li class="contact-number">
-                    <a id="contact-number" href="tel:9876543210">
-                        <label for="contact-number">Call Us</label>
-                        <span class="widget-field-value">: 9876543210</span>
+                    <a id="contact-number" href="tel:<?php echo get_theme_mod(
+                            'contact_phone',
+                            '9876543210'
+                    ); ?>">
+                        <label for="contact-number"><?php echo get_theme_mod(
+                                'contact_phone_label',
+                                'Call Us'
+                            ); ?></label>
+                        <span class="widget-field-value">: <?php echo get_theme_mod(
+                                'contact_phone',
+                                '9876543210'
+                            ); ?></span>
                     </a>
                 </li>
                 <li class="contact-email">
-                    <a id="contact-email" href="mailto:testdomain@mail.to">
-                        <label for="contact-email">Email</label>
-                        <span class="widget-field-value">: testdomain@mail.to</span>
+                    <a id="contact-email" href="mailto:<?php echo get_theme_mod(
+                            'contact_email',
+                            'testdomain@mail.to'
+                        ); ?>">
+                        <label for="contact-email"><?php echo get_theme_mod(
+                                'contact_email_label',
+                                'Email'
+                            ); ?></label>
+                        <span class="widget-field-value">: <?php echo get_theme_mod(
+                                'contact_email',
+                                'testdomain@mail.to'
+                                ); ?></span>
                     </a>
                 </li>
                 <li class="contact-us-button">
-                    <button id="contact-us-button">Contact Us</button>
+                    <button id="contact-us-button"><?php echo get_theme_mod(
+                            'contact_us_button',
+                            'Contact Us'
+                            ); ?></button>
                 </li>
             </ul>
-        </div>
-        <div class="contacts-widget-modal">
-            <div class="message-wrap">
-                <span class="close"></span>
-                <p class="message">You may use contact form here</p>
-            </div>
         </div>
         <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
     </div><!-- .wrap -->

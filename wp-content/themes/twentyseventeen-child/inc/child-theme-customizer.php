@@ -51,6 +51,7 @@ function customizer_contacts( $wp_customize ) {
             'priority'    => 10,
             'type'        => 'text',
             'capability'  => 'edit_theme_options',
+            'default'     => '9876543210',
             'input_attrs' =>
                 [
                     'style'       => 'border: 1px solid #ddd',
@@ -77,6 +78,7 @@ function customizer_contacts( $wp_customize ) {
             'priority'    => 10,
             'type'        => 'text',
             'capability'  => 'edit_theme_options',
+            'default'     => 'Call Us',
             'input_attrs' =>
                 [
                     'style'       => 'border: 1px solid #ddd',
@@ -104,6 +106,7 @@ function customizer_contacts( $wp_customize ) {
             'priority'    => 10,
             'type'        => 'text',
             'capability'  => 'edit_theme_options',
+            'default'     => 'testdomain@mail.to',
             'input_attrs' =>
                 [
                     'style'       => 'border: 1px solid #ddd',
@@ -130,6 +133,7 @@ function customizer_contacts( $wp_customize ) {
             'priority'    => 10,
             'type'        => 'text',
             'capability'  => 'edit_theme_options',
+            'default'     => 'Email',
             'input_attrs' =>
                 [
                     'style'       => 'border: 1px solid #ddd',
@@ -157,6 +161,7 @@ function customizer_contacts( $wp_customize ) {
             'priority'    => 10,
             'type'        => 'text',
             'capability'  => 'edit_theme_options',
+            'default'     => 'Contact Us',
             'input_attrs' =>
                 [
                     'style'       => 'border: 1px solid #ddd',
